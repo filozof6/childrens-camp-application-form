@@ -53,11 +53,15 @@ const getters = {
       priceToReturn += tripData.priceForKid;
 
       if (state.transportation === 'group') {
-        priceToReturn += 15;
+        priceToReturn += tripData.groupTransportFee;
+        if (state.anotherKid) {
+          priceToReturn += tripData.groupTransportFee;
+        }
       }
 
       if (state.anotherKid) {
-        priceToReturn = (priceToReturn - tripData.siblingDiscount) * 2;
+        priceToReturn += tripData.priceForKid;
+        priceToReturn -= (tripData.siblingDiscount * 2);
       }
     }
 
@@ -167,7 +171,6 @@ const mutations = {
     state.gdprConsent = Boolean(value);
   },
   updateTermsAndConditionsConsent(state, value) {
-    console.log('updateTermsAndConditionsConsent', Boolean(value))
     state.termsAndConditionsConsent = Boolean(value);
   },
   setResponseReceived(state, value) {

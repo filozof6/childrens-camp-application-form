@@ -32,7 +32,7 @@
                 <ChildForm index="1" />
                 <b-row>
                     <b-col>
-                        <p>Súrodenecká zľava spolu: {{ getTripData(selectedTrip).siblingDiscount }} €/dieťa</p>
+                        <p>„Súrodenecká zľava za 2 deti: {{ getTripData(selectedTrip).siblingDiscount }} €/dieťa (spolu {{ getTripData(selectedTrip).siblingDiscount * 2 }} €)“.</p>
                     </b-col>
                 </b-row>
                 <b-row>
