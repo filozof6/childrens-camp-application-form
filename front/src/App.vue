@@ -6,7 +6,7 @@
                     <b-form-group
                             id="tripFieldset"
                             description="Vyberte si turnus."
-                            label="Termíny detské tábory SMAJLOVO 2020"
+                            label="Termíny detské tábory SMAJLOVO"
                             label-for="trip"
                     >
                         <b-form-select id="trip" v-model="selectedTrip"
@@ -114,7 +114,7 @@
 
             <b-row class="margin-top-half">
                 <b-col>
-                    <b-link href="https://www.smajlovo.sk/files/download/2020/zasady_spracovania_osobnych_udajov.pdf"
+                    <b-link href="https://www.smajlovo.sk/files/download/pdf/zasady_spracovania_osobnych_udajov.pdf"
                             target="_blank"
                     >
                         Oboznámil(a) som sa s informáciami o spracovaní osobných údajov.
@@ -123,7 +123,7 @@
             </b-row>
             <b-row>
                 <b-col>
-                    <b-link href="https://smajlovo.sk/files/dokumenty/vseobecne_podmienky_poskytovania_sluzieb_smajlovo.pdf"
+                    <b-link href="https://smajlovo.sk/files/download/pdf/vseobecne_podmienky_poskytovania_sluzieb_smajlovo.pdf"
                             target="_blank"
                     >
                         Oboznámil(a) som sa so Všeobecnými podmienkami poskytovania služieb.
